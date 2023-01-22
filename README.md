@@ -43,7 +43,15 @@ Share this ip with you contact <b>privately</b>.
 ## Outline VPN
 In the directory where you have your private key, run:
 ```bash
-ssh -i <your-key>.pem ec2-user@<instance-public-ip> grep { /outline.log
+ssh -i <your-private-key> ec2-user@<instance-public-ip> grep { /outline.log
 ```
+Download [outline manager](https://getoutline.org/get-started/#step-1) and follow the steps for AWS.
 
-Past the output value from the command above in outline manager and share the outline ssh key with your contact.
+Paste the output value from the command above in outline manager and share the outline ssh key with your contact.
+
+
+## Delete All
+In order to delete the servers that you create with terraform, don't make changes on the aws console manually. Use this command: 
+```commandline
+terraform destroy
+```

@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0ceecbb0f30a902a6"
+  ami           = "ami-0cca134ec43cf708f"
   instance_type = "t2.micro"
   key_name= "default-key"
   tags = {
@@ -29,5 +29,5 @@ resource "aws_instance" "app_server" {
 
 resource "aws_key_pair" "app_server" {
   key_name   = "default-key"
-  public_key = "ssh-rsa AA...."
+  public_key = "ssh-rsa AA..."
 }
