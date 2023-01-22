@@ -23,12 +23,15 @@ set AWS_SECRET_ACCESS_KEY=<your-secret-key>
 5. Clone this Repo
 6. Generate an [SSH key pair](https://docs.oracle.com/en/cloud/cloud-at-customer/occ-get-started/generate-ssh-key-pair.html)
 7. Copy your public key value into <em>public_key</em> in [main.tf](main.tf)
+8. In the auto-proxy directory that you cloned run:
+```commandline
+terraform init
+```
 
 ## Create VPN & Proxy
 
 In the auto-proxy directory that you cloned run:
 ```commandline
-terraform init
 terraform apply
 ```
 (type yes)
