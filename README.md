@@ -41,7 +41,7 @@ Get instance public ip
 ```commandline
 terraform output
 ```
-Share this ip with you contact <b>privately</b>.
+Share this ip with your contact <b>privately</b>.
 
 ## Outline VPN
 In the directory where you have your private key, run:
